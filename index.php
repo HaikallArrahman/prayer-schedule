@@ -167,22 +167,24 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            padding: 10px;
+            padding: 8px 12px;
             background-color: #4548ff;
             color: #fff;
             border: none;
-            border-radius: 4px;
+            border-radius: 50%;
             cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin-bottom: 2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
 
         .print-button:hover {
             background-color: #333;
+            transform: scale(1.1);
         }
 
         .print-button i {
-            font-size: 20px;
+            font-size: 14px;
         }
 
         footer {
@@ -234,6 +236,21 @@
                 position: absolute;
                 left: 0;
                 top: 0;
+            }
+
+            .imsakiyah table th {
+                background-color: #4548ff !important;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .imsakiyah table tr:nth-child(even) {
+                background-color: #f9f9f9 !important;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .imsakiyah table tr.today {
+                background-color: #ffeb3b !important;
+                -webkit-print-color-adjust: exact;
             }
         }
     </style>
