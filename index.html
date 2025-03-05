@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
       background-color: #f4f4f9;
+      color: #333;
     }
     .container {
       width: 90%;
@@ -18,15 +19,16 @@
       margin: 0 auto;
       padding: 20px;
     }
-    h2, h3 {
+    h2 {
       text-align: center;
       color: #333;
+      margin-bottom: 20px;
     }
     .kotak {
       background: #fff;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
       margin-bottom: 20px;
       position: relative;
     }
@@ -39,7 +41,7 @@
       margin-top: 20px;
     }
     .imsakiyah table th, .imsakiyah table td {
-      padding: 10px;
+      padding: 12px;
       border: 1px solid #ddd;
       text-align: center;
     }
@@ -58,13 +60,15 @@
       border: 1px solid #ddd;
       border-radius: 4px;
       margin-top: 10px;
+      width: 100%;
+      max-width: 300px;
     }
     @media (max-width: 768px) {
       .kotak {
         padding: 10px;
       }
       .imsakiyah table th, .imsakiyah table td {
-        padding: 5px;
+        padding: 8px;
       }
     }
     .table-container {
@@ -82,7 +86,8 @@
       padding: 10px;
       border: 1px solid #ddd;
       border-radius: 4px;
-      width: 200px;
+      width: 100%;
+      max-width: 300px;
       margin-bottom: 10px;
     }
     .option-container {
@@ -96,6 +101,16 @@
       font-size: 18px;
       color: #333;
       margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f4f4f9;
+      border-top: 1px solid #ddd;
+      margin-top: 20px;
+    }
+    footer p {
+      margin: 5px 0;
     }
   </style>
   <script>
@@ -198,7 +213,6 @@
 <body>
   <div class="container">
     <h2>Jadwal Shalat dan Imsakiyah</h2>
-    <h3><a href="https://www.malasngoding.com">www.malasngoding.com</a></h3>
     <div class="search-container">
       <input type="text" id="citySearch" onkeyup="filterCities()" placeholder="Cari kota atau daerah...">
       <form method="get" action="" style="display:none;">
@@ -233,5 +247,9 @@
     </div>
     <div id="loading" class="loading">Loading...</div>
   </div>
+  <footer>
+    <h3><a href="https://www.malasngoding.com">www.malasngoding.com</a></h3>
+    <p>© Design by Kall</p>
+  </footer>
 </body>
 </html>
