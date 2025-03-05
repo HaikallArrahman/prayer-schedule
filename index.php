@@ -39,6 +39,12 @@
             animation: fadeIn 1s ease;
         }
 
+        h2 a {
+            color: black;
+            text-decoration: none;
+            cursor: default;
+        }
+
         .kotak {
             background: #fff;
             padding: 20px;
@@ -342,7 +348,7 @@
 
 <body>
     <div class="container">
-        <h2>Jadwal Shalat dan Imsakiyah</h2>
+        <h2><a href="/index.php">Jadwal Shalat dan Imsakiyah</a></h2>
         <div class="search-container">
             <input type="text" id="citySearch" onkeyup="filterCities()" placeholder="Cari kota atau daerah...">
             <form method="get" action="" style="display:none;">
